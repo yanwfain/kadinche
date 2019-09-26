@@ -1,0 +1,55 @@
+<view class="topstart">
+  {{detail.order_status_text}}
+</view>
+<view class="content">
+  <view class="top_tit">
+    <view class="biahao">订单编号：{{detail.order_no}}</view>
+    <view class="start_txt">{{detail.order_status_text}}</view>
+  </view>
+  <view class="cont-ten">
+    <image class="left_img" src="../../images/e9a8e24133bbba72452f7156398d7ce.png"></image>
+    <view class="right_cont">
+      <view class="ttix">{{detail.product_status_text}}</view>
+      <!-- <view class="times">{{detail.subscribe_day}} {{detail.subscribe_time}}</view> -->
+      <view class="num_moneys">￥{{detail.product_price}}</view>
+    </view>
+  </view>
+</view>
+<view class="center_cont" wx:if="{{isShow}}">
+  <view class="center_tit">
+    订单信息
+  </view>
+  <view class="moundosp">
+    <view class="lefr_name">订单编号</view>
+    <view class="right_conts"> {{detail.order_status_text}}</view>
+  </view>
+   <view class="moundosp">
+    <view class="lefr_name">付款金额</view>
+    <view class="right_conts">{{detail.order_price}}元</view>
+  </view>
+   <view class="moundosp">
+    <view class="lefr_name">支付方式</view>
+    <view class="right_conts">{{detail.buy_status_text}}</view>
+
+  </view>
+   <view class="moundosp">
+    <view class="lefr_name">支付时间</view>
+    <view class="right_conts">{{detail.create_time}}</view>
+  </view>
+     <view class="moundosp">
+    <view class="lefr_name">核销次数</view>
+    <view class="right_conts">下单数量：{{product_num}}   已核销：{{over_num}}</view>
+  </view>
+    <view class="moundosp" >
+    <view class="lefr_name">二维码</view>
+    <image bindtap="previewImg" class="imgsops" src="https://new.baike360.cn/index.php/api/index/getQrcode?order_id={{id}}"></image>
+    <!-- <view class="txtslt">二维码已核销</view> -->
+  </view>
+</view>
+<view class="fix" wx:if="{{sifix}}">
+<view class="fix_cont">
+    <view class="dele" bindtap="deleFn">取消订单</view>
+  <view class="gofu" data-buy_status="{{detail.buy_status}}" data-id="{{detail.id}}" data-order_no="{{detail.order_no}}" bindtap="goFufn">去支付</view>
+</view>
+
+</view>

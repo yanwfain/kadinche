@@ -1,0 +1,29 @@
+<view class="top_titl" wx:if="{{isUp}}">
+  您已选择线下支付，线下订单确认码：
+</view>
+<view  class="top_titl" wx:if="{{isTop}}">
+  您已支付成功，出示二维码进行使用：
+</view>
+<view class="top_titls" wx:if="{{isTop}}">
+  您购买的数量为{{product_num}}，已核销的数量为{{over_num}}
+</view>
+<view class="cont" wx:if="{{isUp}}">
+  <view class="cont_nioer">
+    <view>{{order_no}}</view>
+  </view>
+  <view class="querleft" bindtap="opsque">
+    确认付款
+  </view>
+</view>
+<view class="contow" wx:if="{{isTop}}">
+  <view class="erweima">
+    <image bindtap="previewImg" src="https://new.baike360.cn/index.php/api/index/getQrcode?order_id={{id}}"></image>
+  </view>
+</view>
+<view class="qizi">
+  <image src="../../images/453e772ccb39c7a0c08f22d2e635649.png"></image>
+</view>
+<view class="btn_bottom">
+  <view bindtap="ruetuFn">返回首页</view>
+  <view data-order_status="{{order_status}}" data-deid="{{deid}}" bindtap="delitsFn">订单详情</view>
+</view>

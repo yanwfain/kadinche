@@ -1,0 +1,43 @@
+<view class="tit">
+  <text style="color:white" bindtap="gomi">总排名成绩</text> /
+  <text style="color:#FF7900" >我的成绩</text>
+</view>
+<view class="cont" wx:if="{{isopsmodel}}" bindtap="delituser" wx:for="{{movieList}}" data-rank="{{item.rank}}" data-only="{{item.only}}" data-all_time="{{item.all_tim}}" data-create_time="{{item.create_time}}" data-user_name="{{item.user_name}}" data-headimg="{{item.headimg}}">
+  <image src="{{item.headimg}}"></image>
+  <view class="cont_txt">
+    <view class="names_txt"> 第{{item.rank}}名</view>
+    <view class="time_txt">{{item.create_time}}</view>
+    <view class="yongtmle">用时：{{item.all_tim}}</view>
+  </view>
+  <view class="opsdelit">详情</view>
+</view>
+<view class="cont" wx:if="{{isopslshow}}" >
+  <image src="{{imgs}}"></image>
+  <view class="cont_txt">
+    <view class="names_txt"> 第0名</view>
+    <view class="time_txt">{{dates}}</view>
+    <view class="yongtmle">用时：00:00:00</view>
+  </view>
+  <!-- <view class="opsdelit">详情</view> -->
+</view>
+<view class="Shouquan" wx:if="{{isSiuser}}">
+  <view class="titless">
+    提示 ！
+  </view>
+  <view class="cont_tltsops">
+    您还未授权请先授权！
+  </view>
+  <view class="btn_button">
+    <view class="quxiao_btn" bindtap="ggopfn">
+      取消
+    </view>
+    <button class="butn_bottys" open-type="getUserInfo" bindgetuserinfo="getUserInfo">去授权 </button>
+  </view>
+    <!-- <view class='buttons' wx:if="{{!hasUserInfo}}" catchtouchmove='preventD'>
+    <view class='butt'>
+      <button  class='getUser' open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击授权登陆 </button>
+    </view>
+  </view> -->
+</view>
+<view class="opsbjc" wx:if="{{isSiuser}}" bindtap="ggopfn">
+</view>

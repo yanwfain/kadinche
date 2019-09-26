@@ -1,0 +1,32 @@
+<view class="top_user">
+
+  <view class='buttons' wx:if="{{!hasUserInfo}}" catchtouchmove='preventD'>
+    <view class='butt'>
+      <button  class='getUser' open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击授权登陆 </button>
+    </view>
+  </view>
+  <view class="name_center" bindtap="userFn" wx:if="{{isUser}}">
+    <image src="{{headimg}}"></image>
+    <view class="nickName">{{nickName}}</view>
+  </view>
+</view>
+<view class="cemter_hioter">
+  <view class="top_tit">
+    <view>我的订单</view>
+    <view bindtap="alldd">全部订单 ></view>
+  </view>
+  <view class="content_cnetr">
+    <view class="cont" wx:for="{{delitops}}" data-id="{{item.id}}" bindtap="goNice">
+      <image src="{{item.imgurl}}"></image>
+      <view>{{item.txtx}}</view>
+    </view>
+  </view>
+</view>
+<view class="list_lsiop">
+  <view class="cont_list_ops" wx:for="{{centlistop}}" bindtap="gochlidops" data-id="{{item.id}}">
+    <view class="lis-optxt">{{item.txt}}</view>
+    <view class="cont_list-img">
+      <image src="../../images/look.png"></image>
+    </view>
+  </view>
+</view>

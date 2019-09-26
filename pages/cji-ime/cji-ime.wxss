@@ -1,0 +1,173 @@
+/* pages/cji-ime/cji-ime.wxss */
+.tit{
+  width: 100%;
+  height: 60rpx;
+  text-align: center;
+  color: #fff;
+  background: black;
+  line-height: 60rpx;
+  font-size: 36rpx;
+}
+.toptitl {
+  width: 100%;
+  display: flex;
+  height: 100rpx;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.toptitl image {
+  width: 26rpx;
+  height: 20rpx;
+  margin-top: 10rpx;
+  margin-left:6rpx;
+  margin-right: 6rpx;
+}
+
+.tits {
+  height: 80rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.rihgt_tio {
+  height: 80rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.cont {
+  width: 90%;
+  margin: 0 auto;
+  background: rgb(227, 255, 26);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30rpx 0;
+  position: relative;
+  border-radius: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.cont image {
+  width: 20%;
+  height: 140rpx;
+}
+
+.cont_txt {
+  width: 50%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.names_txt {
+  padding: 10rpx;
+  background: black;
+  font-size: 34rpx;
+  font-weight: 600;
+  color: rgb(227, 255, 25);
+  text-align: center;
+}
+
+.time_txt {
+  font-size: 30rpx;
+  padding: 4rpx;
+  font-weight: 600;
+  border-bottom: 3rpx solid black;
+  text-align: center;
+}
+
+.yongtmle {
+  font-size: 30rpx;
+  padding: 4rpx;
+  font-weight: 600;
+  text-align: center;
+}
+.opsdelit{
+  position: absolute;
+  right: 4%;
+  bottom: 4%;
+  width: 100rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  border:2rpx solid black;
+  border-radius: 10rpx;
+}
+.time-picker{
+  width: 300rpx;
+}
+.Shouquan{
+  position: fixed;
+  top: 30%;
+  z-index: 99;
+  width: 70%;
+  left:15%;
+  right: 15%;
+  padding: 20rpx 0;
+  border-radius: 12rpx;
+  background: rgb(248, 248, 248);
+}
+.titless{
+  width: 100%;
+  text-align: center;
+  /* line-height: 80rpx; */
+
+}
+.cont_tltsops{
+  width: 90%;
+  text-align: center;
+  height: 120rpx;
+  line-height: 120rpx;
+  margin: 0 auto;
+}
+.btn_button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2rpx solid #ccc;
+}
+.quxiao_btn{
+  width: 49%;
+  border-right: 2rpx solid #ccc;
+  line-height: 80rpx;
+  text-align: center;
+}
+.butn_bottys{
+  width: 49%;
+  text-align: center;
+  line-height: 80rpx;
+  color: rgb(41, 121, 41);
+}
+button{
+  border: none;
+}
+button::after{
+
+  border:none;
+
+}
+.getUser{
+  width: 50%;
+  position: absolute;
+  left:0;
+  right: 0;
+  height: 80rpx;
+  background: rgb(20, 141, 20);
+  color: white;
+  line-height: 80rpx;
+   border-radius: 40rpx;
+}
+.opsbjc{
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 98;
+  opacity: .8;
+  background: black;
+}

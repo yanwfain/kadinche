@@ -1,0 +1,52 @@
+<view class="tab_tit">
+  <view class="{{selected?'defaultss':'default'}}" data-id="" bindtap="selected">全部</view>
+  <view class="{{selected0?'defaultss':'default'}}" data-id="1" bindtap="selected0">待付款</view>
+  <view class="{{selected1?'defaultss':'default'}}" data-id="2" bindtap="selected1">待核销</view>
+  <view class="{{selected2?'defaultss':'default'}}" data-id="3" bindtap="selected2">已核销</view>
+  <view class="{{selected3?'defaultss':'default'}}" data-id="4" bindtap="selected3">已过期</view>
+  <view class="{{selected4?'defaultss':'default'}}" data-id="5" bindtap="selected4">已使用</view>
+</view>
+<view class="content" wx:for="{{movieList}}">
+  <view class="top_tit">
+    <view class="biahao">订单编号：{{item.order_no}}</view>
+    <view class="start_txt">{{item.order_status_text}}</view>
+  </view>
+  <view class="cont-ten">
+    <image class="left_img" src="../../images/e9a8e24133bbba72452f7156398d7ce.png"></image>
+    <view class="right_cont">
+      <view class="ttix">{{item.product_status_text}}</view>
+      <view class="times">{{item.create_time}}</view>
+      <view class="num_moneys">￥{{item.product_price}}</view>
+    </view>
+  </view>
+  <view class="titles">
+    共{{item.product_num}}件商品，总计：￥{{item.order_price}}
+  </view> 
+  <view class="botbtn">
+    <view class="lookdelit" bindtap="godelitsFn" data-id="{{item.id}}" data-order_status="{{item.order_status}}">查看详情</view>
+    <view class="goshoping" bindtap="goFufn" data-order_no="{{item.order_no}}" data-buy_status="{{item.buy_status}}" data-id="{{item.id}}" wx:if="{{item.buy_status==3&&item.order_status == 1}}">去付款</view>
+    <!-- <view class="goshoping" bindtap="goFufnyy" data-order_no="{{item.order_no}}" data-buy_status="{{item.buy_status}}" data-id="{{item.id}}" wx:if="{{item.order_status == 4}}">重新预约</view> -->
+  </view>
+</view>
+
+<view class="bjjj" bindtap="bintgb" wx:if="{{isYyus}}"></view>
+<view class="chonyy" wx:if="{{isYyus}}">
+  <view class="selectime">
+    <view>选择时间：</view>
+    <view class="data_mo">
+      <picker bindchange="pickerProChange" mode="date" value="{{op}}">
+        <view class="picker-area-text">
+          {{op?op:"请选择日期"}}
+        </view>
+      </picker>
+    </view>
+    <view class="data_tims">
+      <picker class='time-picker' mode="multiSelector" bindchange='pickerTap' value="{{multiIndex}}" range="{{multiArray}}">{{startDate?startDate:"请选择时间"}} </picker>
+    </view>
+    <view style="color: rgb(22, 115, 202)" wx:if="{{isFlock}}">-{{end}}</view>
+  </view>
+  <view class="bot_but">
+    <view class="quxiao" bindtap="bintgb">取消</view>
+    <view class="que" bindtap="quedingFn" data-id="{{item.id}}">确定</view>
+  </view>
+</view>

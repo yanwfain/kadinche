@@ -1,0 +1,52 @@
+<view class="edit_cont">
+  <view class="head_img" bindtap="uploadimg" style="background:black;color:white;">
+    <view class="heade_name">
+      头像
+    </view>
+    <view class="headimg">
+      <image src="{{upload_picture_list}}" wx:if="{{upload_picture_list != ''}}"></image>
+      <image src="{{headimg}}" wx:else></image>
+    </view> 
+  </view>
+  <view class="head_img">
+    <view class="heade_name">
+      昵称
+    </view>
+    <view class="headimg">
+      <input value="{{nickName}}" placeholder="请输入" bindinput="nameFn" />
+    </view> 
+  </view>
+  <view class="head_img">
+    <view class="heade_name">
+      姓名
+    </view>
+    <view class="headimg">
+      <input value="{{userName}}" bindinput="userNameFn" placeholder="请输入" />
+    </view> 
+  </view>
+ 
+  <view class="head_img">
+    <view class="heade_name">
+      手机号
+    </view>
+    <view class="headimg">
+      <input value="{{phone}}" bindinput="phoneFn" placeholder="请输入" />
+    </view>
+  </view>
+   <view class="head_img">
+    <view class="heade_name">
+      出生日期
+    </view>
+    <view class="headimg">
+      <picker bindchange="pickerProChange" mode="date" value="{{op}}">
+      <view class="picker-area-text">
+        {{mony?mony:"请选择日期"}}
+      </view>
+    </picker>
+    </view>
+  </view>
+  
+</view>
+<view class="qu_bot" bindtap="sunbtn">
+  确定
+</view>

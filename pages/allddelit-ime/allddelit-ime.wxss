@@ -1,0 +1,138 @@
+/* pages/allddelit-ime/allddelit-ime.wxss */
+page{
+  background: rgb(248, 248, 248)
+}
+.topstart{
+  padding: 50rpx 20rpx;
+  background: black;
+  color: white;
+}
+.content{
+  width: 96%;
+  margin: 0 auto;
+  background: white;
+  padding: 20rpx 10rpx;
+}
+.top_tit{
+  display: flex;
+  width: 96%;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+  font-size: 28rpx;
+  
+}
+.start_txt{
+  color: rgb(255, 187, 0);
+}
+.cont-ten{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200rpx;
+  margin-top:10rpx;
+  margin-bottom: 10rpx;
+}
+.left_img{
+  width: 30%;
+  height: 200rpx;
+  /* background: red; */
+}
+.right_cont{
+  margin-left:2%;
+  width: 68%;
+  height: 200rpx;
+}
+.ttix{
+  font-size: 28rpx;
+  margin-bottom: 36rpx;
+  margin-top: 10rpx;
+
+}
+.times{
+  color: gray;
+  font-size: 26rpx;
+  margin-bottom: 36rpx;
+}
+.num_moneys{
+  color: rgb(255, 187, 0);
+  font-size: 28rpx;
+  /* font-weight: 600; */
+}
+.center_cont{
+  width: 96%;
+  margin: 0 auto;
+  padding-top:50rpx;
+  padding-left:10rpx;
+  padding-right:10rpx;
+  background: white;
+}
+.center_tit{
+  width: 100%;
+  padding-bottom: 20rpx;
+  border-bottom: 2rpx solid #eee;
+}
+.moundosp{
+  display: flex;
+  width: 100%;
+  /* height: 70rpx; */
+  align-items: center;
+  padding: 20rpx 0;
+
+}
+.lefr_name{
+  font-size: 28rpx;
+  color: rgb(105, 103, 103);
+  margin-right: 10%;
+}
+.right_conts{
+  font-size: 28rpx;
+ color: rgb(105, 103, 103)
+}
+.imgsops{
+  width: 200rpx;
+  height:200rpx;
+}
+.txtslt{
+  font-size: 28rpx;
+  color: rgb(105, 103, 103);
+  margin-left: 20rpx;
+
+}
+.fix{
+  position: fixed;
+  width: 100%;
+  height: 100rpx;
+  background: white;
+  bottom: 0;
+  left:0;
+
+}
+.fix_cont{
+  position: absolute;
+  width: 50%;
+  height: 100rpx;
+  right: 4%;
+  top:0;
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28rpx;
+
+}
+.dele{
+width: 40%;
+height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+}
+.gofu{
+  width: 50%;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  background: rgb(255, 187, 0);
+  color: white;
+  border-radius: 20rpx;
+}

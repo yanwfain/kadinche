@@ -1,0 +1,18 @@
+<view class="toptitl">
+  我的成绩
+</view>
+<view class="contdelit">
+  <image src="{{headimg}}"></image>
+  <view class="cont_titles">
+    <view class="names_txt">亲子单圈  第{{rank}}名</view>
+    <view class="names_txts" wx:for="{{only}}" data-index="{{index}}">第{{index+1}}圈： {{item.this_tim}}</view>
+    <!-- <view class="names_txts">第二圈：  00:39:37</view>
+    <view class="names_txts">第三圈：  00:39:37</view> -->
+  </view>
+</view>
+<view class="deli_txt">
+  <view class="font_txt">NAME:{{user_name}}</view>
+  <view class="font_txt">LAPS:3</view>
+  <view class="font_txts">BEST LAPTIME</view>
+  <view class="font_txts">{{all_time}}</view>
+</view>

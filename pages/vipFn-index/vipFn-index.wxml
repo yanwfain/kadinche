@@ -1,0 +1,46 @@
+<view class="conetn">
+  <view style="width:90%;height:110rpx;margin:0 auto;">
+    <image style="width100%;height:110rpx;" src="../../images/31355f6981cef4abaa9b66391c7e4f2.png"></image>
+  </view>
+  <view class="moey_cont">
+    <view class="dv_cont" wx:for="{{detail}}">
+      <view class="cont {{ selected == item.id ? 'selected' : null }}" data-id='{{item.id}}' bindtap="selectSpe">
+        <view class="da">￥{{item.buy_price}}</view>
+        <view class="xiao">送{{item.give_price}}元</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="moeny" wx:if="{{isShow}}">
+  <view class="zhifumoney">
+    <view>支付金额</view>
+    <view style="color:red">￥{{money}}</view>
+  </view>
+</view>
+<view class="gochong" bindtap="btnCfn" wx:if="{{isFalse}}">
+  确认充值
+</view>
+<view class="gochongs" wx:else>
+  确认充值
+</view>
+<view class="Shouquan" wx:if="{{isSiuser}}">
+  <view class="titless">
+    提示 ！
+  </view>
+  <view class="cont_tltsops">
+    您还未授权请先授权！
+  </view>
+  <view class="btn_button">
+    <view class="quxiao_btn" bindtap="ggopfn">
+      取消
+    </view>
+    <button class="butn_bottys" open-type="getUserInfo" bindgetuserinfo="getUserInfo">去授权 </button>
+  </view>
+    <!-- <view class='buttons' wx:if="{{!hasUserInfo}}" catchtouchmove='preventD'>
+    <view class='butt'>
+      <button  class='getUser' open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击授权登陆 </button>
+    </view>
+  </view> -->
+</view>
+<view class="opsbjc" wx:if="{{isSiuser}}" bindtap="ggopfn">
+</view>

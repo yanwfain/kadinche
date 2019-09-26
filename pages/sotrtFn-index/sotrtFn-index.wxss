@@ -1,0 +1,66 @@
+/* pages/sotrtFn-index/sotrtFn-index.wxss */
+.tit{
+  width: 100%;
+  height: 60rpx;
+  text-align: center;
+  color: #fff;
+  background: black;
+  line-height: 60rpx;
+  font-size: 36rpx;
+}
+.tab{
+  width: 100%;
+
+  background: #000;
+}
+.tab_toptit{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top:1rpx solid rgb(226,255,24);
+  
+}
+.top{
+  color:white;
+}
+.one{
+  width: 10%;
+  /* height: 60rpx; */
+  font-size: 28rpx;
+  text-align: center;
+  /* line-height: 60rpx; */
+  padding-top:10rpx;
+  padding-bottom:10rpx;
+}
+.bord{
+  border-left:1rpx solid rgb(226,255,24);
+  border-right:1rpx solid rgb(226,255,24);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.two{
+  width: 28%;
+  height:80rpx;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 80rpx;
+  position: relative;
+}
+.two image{
+  width: 34rpx;
+  height: 34rpx;
+  position: absolute;
+  top:0;
+  left: 0;
+}
+.botm_img{
+  width: 100%;
+  height: 500rpx;
+  margin: 0 auto;
+}
+.botm_img image{
+    width: 100%;
+  height: 500rpx;
+}

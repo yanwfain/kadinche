@@ -1,0 +1,50 @@
+/* pages/edit-me/edit-me.wxss */
+
+.edit_cont {
+  padding: 20rpx;
+}
+
+.head_img {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 6rpx solid rgb(17, 16, 16);
+}
+
+.heade_name {
+  font-size: 30rp;
+}
+
+.headimg {
+  /* width: 100rpx; *//* height: 100rpx; */
+}
+
+.headimg image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 100%;
+}
+
+.headimg input {
+  /* width: 200rpx; */
+  line-height: 100rpx;
+  padding: 10rpx;
+  text-align: right;
+  font-size: 28rpx;
+}
+
+.qu_bot {
+  width: 200rpx;
+  height: 60rpc;
+  padding: 10rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 60rpxx;
+  background: linear-gradient(to right, #e52f16, #fa752e);
+  margin: 0 auto;
+  color: white;
+  margin-top:30rpx;
+}

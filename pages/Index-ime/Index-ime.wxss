@@ -1,0 +1,112 @@
+/* pages/Index-ime/Index-ime.wxss */
+
+page {
+  background: rgb(247, 247, 247);
+}
+.top_user {
+  width: 100%;
+  height: 300rpx;
+  background: #000;
+  line-height: 300rpx;
+}
+.name_center {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+}
+.nickName {
+  color: white;
+  margin-left: 10rpx;
+}
+.name_center image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100%;
+}
+.cemter_hioter {
+  width: 90%;
+  height: 250rpx;
+  margin: 0 auto;
+  background: #fff;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 20rpx;
+}
+
+.top_tit {
+  display: flex;
+  width: 90%;
+  height: 80rpx;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 80rpx;
+  margin: 0 auto;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.content_cnetr {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+  margin-top: 20rpx;
+}
+
+.cont {
+  width: 20%;
+  height: 80rpx;
+  text-align: center;
+  font-size: 26rpx;
+}
+
+.cont image {
+  width: 60%;
+  height: 80rpx;
+}
+
+.list_lsiop {
+  width: 92%;
+  margin: 0 auto;
+}
+
+.cont_list_ops {
+  width: 96%;
+  margin: 0 auto;
+  /* line-height: 50rpx; */
+  padding: 30rpx 10rpx;
+  /* padding-bottom: 30rpx; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border-bottom: 1rpx solid #eee; */
+  background: #fff;
+  margin-bottom: 20rpx;
+  border-radius: 20rpx;
+}
+
+.cont_list-img {
+  width: 20rpx;
+  height: 30rpx;
+}
+
+.cont_list-img image {
+  width: 15rpx;
+  height: 25rpx;
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+}
+.butt{
+  width: 100%;
+}
+.getUser{
+  width: 50%;
+  background: rgb(20, 141, 20);
+  color: white;
+  line-height: 80rpx;
+  margin-top:100rpx;
+  border-radius: 40rpx;
+}

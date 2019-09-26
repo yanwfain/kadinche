@@ -1,0 +1,67 @@
+/* pages/money-ime/money-ime.wxss */
+
+page{
+  background: rgb(248, 248, 248);
+}
+.txt{
+  width: 100%;
+  height: 250rpx;
+  line-height: 250rpx;
+  text-align: center;
+  font-size: 70rpx;
+
+}
+.tlirt{
+  width: 100%;
+  text-align: center;
+  font-size: 26rpx;
+}
+.congzh{
+  width: 80%;
+  height: 75rpx;
+  line-height: 75rpx;
+  text-align: center;
+  background: rgb(211, 53, 53);
+  color: white;
+  border-radius: 16rpx;
+  margin:0 auto;
+  margin-top:30rpx;
+}
+.tit_txt{
+  /* width: 100%; */
+  padding: 10rpx 40rpx;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left_num{
+width:  30%;
+text-align: center;
+height: 100rpx;
+border-right: 2rpx solid rgb(223, 220, 220);
+}
+.right_num{
+  width:  30%;
+text-align: center;
+height: 100rpx;
+
+}
+.nums{
+  margin-top:10rpx; 
+  margin-bottom:10rpx; 
+}
+.mon_mun{
+  font-size: 26rpx;
+}
+.btn_right{
+  width: 24%;
+  height: 45rpx;
+  border: 2rpx solid rgb(223, 220, 220);
+  text-align: center;
+  line-height: 45rpx;
+  border-radius: 10rpx;
+  font-size: 26rpx;
+  margin-left: 6%;
+}

@@ -1,0 +1,69 @@
+.buttons {
+  position: fixed;
+  z-index: 999;
+  width: 300rpx;
+  height: 300rpx;
+  margin: 0 auto;
+  background: rgb(0, 0, 0);
+  opacity: 0.9;
+  left: 30%;
+  top: 40%;
+  text-align: center;
+  align-items: center;
+  border-radius: 10rpx;
+}
+
+.buttons image {
+  height: 140rpx;
+  width: 140rpx;
+  margin: 30rpx auto;
+  border-radius: 200rpx;
+  display: block;
+}
+
+.searchBox {
+  width: 100%;
+  height: 400rpx;
+}
+
+.shop_swiper {
+  width: 100%;
+  height: 400rpx;
+}
+
+.lbImg {
+  width: 100%;
+  height: 400rpx;
+}
+
+.imgheight {
+  height: 400rpx;
+}
+
+.imgheight image {
+  height: 400rpx;
+}
+
+.sortOps {
+  width: 100%;
+  height: 300rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.sortOps image {
+  width: 100%;
+  height: 300rpx;
+}
+
+.newvipcsop {
+  width: 100%;
+  height: 300rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.newvipcsop image {
+  width: 100%;
+  height: 300rpx;
+}

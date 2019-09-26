@@ -1,0 +1,20 @@
+<view class="txt">
+  {{detail.all_price}}
+</view>
+<view class="tlirt">
+  账户余额(元)
+</view>
+<view class="congzh" bindtap="congzhifn">充值</view>
+<view class="tit_txt">
+  <view class="left_num">
+    <view class="nums">{{detail.buy_price}}</view>
+    <view class="mon_mun">本金</view>
+  </view>
+  <view class="right_num">
+    <view class="nums">{{detail.give_price}}</view>
+    <view class="mon_mun">赠币</view>
+  </view>
+  <view class="btn_right" bindtap="lookMx">
+    查看明细
+  </view>
+</view>

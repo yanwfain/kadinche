@@ -1,0 +1,8 @@
+<view class="cont_list" wx:for="{{movieList}}">
+  <image src="{{headimg }}"></image>
+  <view class="cont_txt">
+    <view class="txt">充值金额:{{item.buy_price}} 赠送金额:{{item.give_price}}</view>
+    <view class="times">{{item.buy_time}}</view>
+  </view>
+  <view class="rihgt_money">+{{item.all_price}}</view>
+</view>

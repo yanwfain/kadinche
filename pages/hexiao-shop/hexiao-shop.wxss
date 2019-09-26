@@ -1,0 +1,93 @@
+/* pages/hexiao-shop/hexiao-shop.wxss */
+
+.top_titl {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20rpx;
+}
+.top_titls {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: gray;
+}
+.cont {
+  width: 90%;
+  margin: 0 auto;
+  height: 250rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100rpx;
+}
+
+.cont_nioer {
+  width: 74%;
+  height: 250rpx;
+  line-height: 250rpx;
+  text-align: center;
+  background: black;
+  color: white;
+  font-size: 64rpx;
+  margin-right: 2%;
+}
+
+.querleft {
+  width: 22%;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  font-size: 30rpx;
+  border: 3rpx solid black;
+  border-radius: 10rpx;
+}
+
+.contow {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300rpx;
+  margin-top: 100rpx;
+}
+
+.erweima {
+  width: 300rpx;
+  height: 300rpx;
+  border: 2rpx solid black;
+}
+.erweima image{
+   width: 300rpx;
+  height: 300rpx;
+}
+.qizi {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+}
+
+.qizi image {
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.btn_bottom {
+  width: 80%;
+  height: 60rpx;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top:20rpx;
+}
+.btn_bottom view{
+  height: 60rpx;
+  width: 40%;
+  text-align: center;
+  line-height: 60rpx;
+  border:3rpx solid gray;
+  border-radius: 10rpx;
+}

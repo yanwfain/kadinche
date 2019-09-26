@@ -1,0 +1,307 @@
+.searchBox {
+  width: 100%;
+  height: 400rpx;
+}
+
+.shop_swiper {
+  width: 100%;
+  height: 400rpx;
+}
+
+.lbImg {
+  width: 100%;
+  height: 400rpx;
+}
+
+.imgheight {
+  height: 400rpx;
+}
+
+.imgheight image {
+  height: 400rpx;
+}
+
+.content {
+  /* width: ; */
+  padding: 20rpx;
+  /* background: rgb(248, 248, 248); */
+}
+
+.guige {
+  font-size: 28rpx;
+  display: flex;
+}
+
+.titlemu {
+  padding: 12rpx 30rpx;
+}
+
+.txt {
+  /* width:200rpx; */
+  color: black;
+  padding: 12rpx 30rpx;
+  /* padding: 15rpx; */
+  background: rgb(241, 240, 240);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top:13rpx; */
+  margin-left: 20rpx;
+  justify-content: center;
+
+}
+
+.txt.active {
+  display: block;
+}
+
+.selected {
+  color: #e52f16;
+  background: rgb(197, 193, 193);
+}
+
+.cont-nitore {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20rpx;
+}
+
+.tit {
+  width: 100%;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  font-size: 30rpx;
+}
+
+.num_money {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rightcaozuo {
+  display: flex;
+  /* padding: 0rpx 15rpx; */
+  height: 60rpx;
+  line-height: 60rpx;
+  background: white;
+  font-size: 34rpx;
+}
+
+.lrops {
+  width: 50rpx;
+  line-height: 60rpx;
+  font-size: 45rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  text-align: center;
+}
+.selectime{
+  width: 88%;
+  margin: 0 auto;
+  padding: 10rpx;
+  margin-top:20rpx;
+  display: flex;
+  border-bottom: 2rpx solid gray;
+}
+.data_mo{
+  margin-left: 20rpx;
+  margin-right: 60rpx;
+  color: rgb(22, 115, 202);
+
+
+}
+.data_tims{
+  color: rgb(22, 115, 202);
+
+
+}
+.monted{
+  width: 100%;
+  height: 350rpx;
+}
+.monted image{
+   width: 100%;
+  height: 350rpx;
+}
+.goShop{
+  position: fixed;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  background: red;
+  z-index: 1
+}
+.goShops{
+  position: fixed;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  background: gray;
+  z-index: 1;
+  transition: all .6s;
+}
+.isFlone{
+  width: 100%;
+  position:fixed;
+  top:0;
+  left:0;
+  height: 60%;
+  opacity:.7;
+  background: #7A807D;
+  z-index: 99
+}
+.isbottom{
+  width: 100%;
+  position:fixed;
+  bottom:0%;
+  left:0;
+  height: 50%;
+  background: white;
+  z-index: 99;
+}
+
+.tits{
+  width:  100%;
+  text-align: center;
+  line-height: 70rpx;
+  height: 70rpx;
+  font-size: 30rpx;
+  border-bottom: 1rpx solid #ccc;
+  font-weight: 600;
+}
+.setxt{
+  width: 90%;
+  margin: 0 auto;
+  font-size: 28rpx;
+  margin-top:10rpx;
+}
+.zhifu_box{
+  width: 90%;
+  height: 60rpx;
+  line-height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top:20rpx;
+}
+.left{
+  display: flex;
+   height: 46rpx;
+   line-height: 46rpx;
+}
+.left image{
+  width: 50rpx;
+  height: 46rpx;
+}
+.zhifu_img{
+  margin-right: 20rpx;
+}
+.bot{
+  position: absolute;
+  left:0;
+  bottom: 0;
+  width: 100%;
+  height: 85rpx;
+  line-height: 85rpx;
+  text-align: center;
+  color: white;
+  background: red;
+  transition: all .7s;
+}
+.bots{
+  position: absolute;
+  left:0;
+  bottom: 0;
+  width: 100%;
+  height: 85rpx;
+  line-height: 85rpx;
+  text-align: center;
+  color: white;
+  background: gray; 
+  transition: all .7s;
+}
+.Shouquan{
+  position: fixed;
+  top: 30%;
+  z-index: 99;
+  width: 70%;
+  left:15%;
+  right: 15%;
+  padding: 20rpx 0;
+  border-radius: 12rpx;
+  background: rgb(248, 248, 248);
+}
+.titless{
+  width: 100%;
+  text-align: center;
+  /* line-height: 80rpx; */
+
+}
+.cont_tltsops{
+  width: 90%;
+  text-align: center;
+  height: 120rpx;
+  line-height: 120rpx;
+  margin: 0 auto;
+}
+.btn_button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2rpx solid #ccc;
+}
+.quxiao_btn{
+  width: 49%;
+  border-right: 2rpx solid #ccc;
+  line-height: 80rpx;
+  text-align: center;
+}
+.butn_bottys{
+  width: 49%;
+  text-align: center;
+  line-height: 80rpx;
+  color: rgb(41, 121, 41);
+}
+button{
+  border: none;
+}
+button::after{
+
+  border:none;
+
+}
+.getUser{
+  width: 50%;
+  position: absolute;
+  left:0;
+  right: 0;
+  height: 80rpx;
+  background: rgb(20, 141, 20);
+  color: white;
+  line-height: 80rpx;
+   border-radius: 40rpx;
+}
+.opsbjc{
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 98;
+  opacity: .8;
+  background: black;
+}

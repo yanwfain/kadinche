@@ -1,0 +1,23 @@
+<view class="tit">
+  <text style="color:#FF7900">总排名成绩</text> /
+  <text style="color:white" bindtap="gomi">我的成绩</text>
+</view>
+<view class="tab">
+  <view class="tab_toptit top">
+    <view class="one">NO/</view>
+    <view class="two bord">NAME</view>
+    <view class="one">LAPS</view>
+    <view class="two bord">BEST LAPTIME</view>
+    <!-- <view class="two">LAST LAPTIME</view> -->
+  </view>
+  <view class="tab_toptit top" wx:for="{{movieList}}">
+    <view class="one">{{item.rank}}</view>
+    <view class="two bord"><image src="../../images/1.png" wx:if="{{item.user_id == user_id}}"></image>{{item.user_name}}</view>
+    <view class="one">3</view>
+    <view class="two bord">{{item.all_tim}}</view>
+    <!-- <view class="two">LAST LAPTIME</view> -->
+  </view>
+</view>
+<!-- <view class="botm_img">
+  <image src="../../images/WechatIMG1872.jpg"></image>
+</view> -->

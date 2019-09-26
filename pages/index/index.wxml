@@ -1,0 +1,21 @@
+<!-- 授权 -->
+<!-- <view bindtap="ops">212312312323</view> -->
+<!-- 轮播 -->
+<view class="searchBox">
+  <swiper class='shop_swiper' indicator-dots autoplay="true" interval="3000" duration="1000" circular='true' hidden='{{luboActive}}' class='lbImg'>
+    <block wx:for="{{detail}}" wx:key="">
+      <swiper-item class="imgheight">
+        <image src="{{item.img_url}}" class='lbImg' data-id='{{item.id}}' data-id="{{item.id}}" data-activities_id='{{item.activities_id}}' bindtap='goChannel' />
+      </swiper-item>
+    </block>
+
+  </swiper>
+</view>
+<!-- 排名 -->
+<view class="sortOps" bindtap="sotrtFn">
+  <image src="../../images/414ec28b1c77792b86d3748d4ca3bb1.png"></image>
+</view>
+<!-- 会员充值 -->
+<view class="newvipcsop" bindtap="vipFn">
+  <image src="../../images/4ef9140effb0adf6b2bea5c8422db4b.png"></image>
+</view>

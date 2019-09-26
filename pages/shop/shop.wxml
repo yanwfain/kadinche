@@ -1,0 +1,124 @@
+<view class="searchBox">
+  <swiper class='shop_swiper' indicator-dots autoplay="true" interval="3000" duration="1000" circular='true' hidden='{{luboActive}}' class='lbImg'>
+    <block wx:for="{{detail}}" wx:key="">
+      <swiper-item class="imgheight">
+        <image src="{{item.img_url}}" class='lbImg' data-id='{{item.id}}' data-id="{{item.id}}" data-activities_id='{{item.activities_id}}' bindtap='goChannel' />
+      </swiper-item>
+    </block>
+
+  </swiper>
+</view>
+<view class="content">
+<view class="tit">
+      {{name}}
+    </view>
+  <view class="guige">
+    <view class="titlemu">项目规格:</view>
+    <block wx:for='{{detail2}}' wx:key>
+      <text class="txt {{ selected == item.id ? 'selected' : null }}" bindtap='selectSpe' data-id='{{item.id}}' data-outPrice="{{item.outPrice}}">{{item.guige}}</text>
+    </block>
+  </view>
+  <view class="cont-nitore" wx:if="{{isshow}}">
+    <!-- <view class="tit">
+      {{names}}
+    </view> -->
+    <view class="num_money">
+      <view style="color:red">￥{{money}}</view>
+      <view class="rightcaozuo">
+        <view class="lrops" bindtap="btn_minus">-</view>
+        <view>{{num}}</view>
+        <view class="lrops" bindtap="btn_add">+</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- <view class="selectime">
+  <view>选择时间：</view>
+  <view class="data_mo">
+    <picker bindchange="pickerProChange" mode="date" value="{{op}}">
+      <view class="picker-area-text">
+        {{op?op:"请选择日期"}}
+      </view>
+    </picker>
+  </view>
+  <view class="data_tims">
+    <picker class='time-picker' mode="multiSelector" bindchange='pickerTap' value="{{multiIndex}}" range="{{multiArray}}">{{startDate?startDate:"请选择时间"}} </picker>
+  </view>
+  <view style="color: rgb(22, 115, 202);" wx:if="{{isFlock}}">-{{end}}</view>
+</view> -->
+<view class="monted">
+  <image src="../../images/center.png"></image>
+</view>
+<view style="height:100rpx;"></view>
+<view class="goShop" bindtap="goSumpot" >
+  立即购买
+</view>
+<!-- <view class="goShops" wx:else>
+  立即购买
+</view> -->
+
+<!-- wx:if="{{isGuan}}" -->
+<view class="isFlone" bindtap="guanfn" wx:if="{{isGuan}}">
+</view>
+<view class="isbottom" wx:if="{{isGuan}}">
+  <view class="tits">支付</view>
+  <view class="setxt">
+    支付方式：
+  </view>
+  <radio-group bindchange="ycfp">
+    <view class="zhifu_box">
+      <view class="left">
+        <view class="zhifu_img">
+          <image src="../../images/weix.png"></image>
+        </view>
+        <view>微信支付</view>
+      </view>
+      <radio value="1"></radio>
+    </view>
+    <view class="zhifu_box">
+      <view class="left">
+        <view class="zhifu_img">
+          <image src="../../images/weix.png"></image>
+        </view>
+        <view>余额支付</view>
+      </view>
+      <radio value="2"></radio>
+    </view>
+    <view class="zhifu_box">
+      <view class="left">
+        <view class="zhifu_img">
+          <image src="../../images/weix.png"></image>
+        </view>
+        <view>线下支付</view>
+      </view>
+      <radio value="3"></radio>
+    </view>
+  </radio-group>
+  <view class="bot" bindtap="submitbtn" wx:if="{{isShowOpst}}">
+    确认支付{{count_pick}}
+  </view>
+    <view class="bots" wx:else>
+    确认支付{{count_pick}}
+  </view>
+</view>
+<view class="Shouquan" wx:if="{{isSiuser}}">
+  <view class="titless">
+    提示 ！
+  </view>
+  <view class="cont_tltsops">
+    您还未授权请先授权！
+  </view>
+  <view class="btn_button">
+    <view class="quxiao_btn" bindtap="ggopfn">
+      取消
+    </view>
+    <button class="butn_bottys" open-type="getUserInfo" bindgetuserinfo="getUserInfo">去授权 </button>
+  </view>
+    <!-- <view class='buttons' wx:if="{{!hasUserInfo}}" catchtouchmove='preventD'>
+    <view class='butt'>
+      <button  class='getUser' open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击授权登陆 </button>
+    </view>
+  </view> -->
+</view>
+<view class="opsbjc" wx:if="{{isSiuser}}" bindtap="ggopfn">
+</view>
